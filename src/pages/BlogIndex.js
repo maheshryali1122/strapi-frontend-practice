@@ -67,7 +67,7 @@ export default ({ posts }) => {
           <Posts>
             {posts.data.slice(0, visible).map((post, index) => {
               const imageUrl = post.attributes.strapi.data[0]?.attributes.url
-                ? `http://34.221.6.26:1337${post.attributes.strapi.data[0].attributes.url}`
+                ? `http://ipaddress:1337${post.attributes.strapi.data[0].attributes.url}`
                 : null;
 
               console.log('Constructed Image URL:', imageUrl);
